@@ -1,0 +1,25 @@
+{
+  "brand": "Toyota",
+  "model": "Corolla",
+  "price_in_cents": 30000
+},
+{
+"brand": "Honda",
+"model": "Civic",
+"price_in_cents": 28000
+},
+{
+"brand": "Ford",
+"model": "F-150",
+"price_in_cents": 35000
+},
+{
+"brand": "Chevrolet",
+"model": "Silverado",
+"price_in_cents": 38000
+},
+{
+"brand": "Volkswagen",
+"model": "Golf",
+"price_in_cents": 25000
+}
