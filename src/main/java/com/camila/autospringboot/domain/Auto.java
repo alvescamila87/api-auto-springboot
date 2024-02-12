@@ -8,8 +8,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Auto {
 
+    @JsonProperty("brand")
     private String brand;
 
+    @JsonProperty("model")
     private String model;
 
     @JsonProperty("price_in_cents") // snake_case
