@@ -9,7 +9,9 @@ import lombok.NoArgsConstructor;
 public class Auto {
 
     private String brand;
+
     private String model;
+
     @JsonProperty("price_in_cents") // snake_case
     private int priceInCents;
 }
