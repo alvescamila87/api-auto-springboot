@@ -13,6 +13,7 @@ function getAutos() {
         .catch(error => console.error('Search error: ', error))
         .finally(() => {
             document.getElementById('spinner').style.display = 'none';
+            document.querySelector('.box-search').style.display = 'none';
         });
 }
 
@@ -35,3 +36,4 @@ function showAutos(result) {
     });
 
 }
+
