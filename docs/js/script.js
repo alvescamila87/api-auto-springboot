@@ -20,13 +20,13 @@ function showAutos(result) {
     var resultAutos = document.getElementById('result');
     resultAutos.innerHTML = '<h4> Autos for Sale </h4>';
 
-    result.array.forEach(auto => {
+    result.forEach(auto => {
         var autoInfo = document.createElement('div');
 
         autoInfo.innerHTML = 
-        '<p>Brand: ' + result.brand + '</p>' + 
-        '<p>Model: ' + result.model + '</p>' + 
-        '<p>Price: ' + result.priceInCents + '</p>';
+        '<p>Brand: ' + auto.brand + '</p>' +
+        '<p>Model: ' + auto.model + '</p>' +
+        '<p>Price: ' + auto.priceInCents + '</p>';
 
         resultAutos.appendChild(autoInfo);
     });
