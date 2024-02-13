@@ -5,7 +5,7 @@ function getAutos() {
 
     document.getElementById('spinner').style.display = 'block';
 
-    var apiURL = 'https://auto-example-api.s3.us-east-2.amazonaws.com/' + '/autos.json';
+    var apiURL = 'https://auto-example-api.s3.us-east-2.amazonaws.com/autos.json';
 
     fetch(apiURL)
         .then(response => response.json())

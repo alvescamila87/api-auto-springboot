@@ -5,7 +5,7 @@ function getAutos() {
 
     document.getElementById('spinner').style.display = 'block';
 
-    var apiURL = 'https://auto-example-api.s3.us-east-2.amazonaws.com/' + '/autos.json';
+    var apiURL = 'https://auto-example-api.s3.us-east-2.amazonaws.com/autos.json';
 
     fetch(apiURL)
         .then(response => response.json())
@@ -17,6 +17,8 @@ function getAutos() {
 }
 
 function showAutos(result) {
+    console.log('Result: ', result);
+
     var resultAutos = document.getElementById('result');
     resultAutos.innerHTML = '<h4> Autos for Sale </h4>';
 
