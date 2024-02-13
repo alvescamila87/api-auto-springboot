@@ -17,16 +17,19 @@ function getAutos() {
 }
 
 function showAutos(result) {
+    console.log('Result: ', result);
+
     var resultAutos = document.getElementById('result');
-    resultAutos.innerHTML = '<h4> Autos for Sale </h4>';
+    resultAutos.innerHTML = '<h4>List of autos for sale </h4>';
 
     result.forEach(auto => {
         var autoInfo = document.createElement('div');
+        autoInfo.classList.add('auto-info');
 
-        autoInfo.innerHTML = 
+        autoInfo.innerHTML += 
         '<p>Brand: ' + auto.brand + '</p>' +
         '<p>Model: ' + auto.model + '</p>' +
-        '<p>Price: ' + auto.priceInCents + '</p>';
+        '<p>Price: ' + auto.price_in_cents + '</p>';
 
         resultAutos.appendChild(autoInfo);
     });
